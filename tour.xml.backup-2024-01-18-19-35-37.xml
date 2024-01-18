@@ -1,0 +1,199 @@
+﻿<krpano version="1.20.11" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+	<include url="floorplan_SM/editor/floorplan_SM.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               maps_loadonfirstuse="true"
+	               gyro="true"
+	               gyro_keeplookingdirection="false"
+	               webvr="true"
+	               webvr_keeplookingdirection="true"
+	               webvr_prev_next_hotspots="true"
+	               autotour="false"
+	               littleplanetintro="false"
+	               followmousecontrol="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="true"
+	               thumbs_text="true"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="true"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext=""
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<include url="skin/vtourskin_design_glass.xml"       />
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+
+	<!-- <events onclick="screentosphere(mouse.x, mouse.y, m_ath, m_atv); showlog(); trace('clicked at ath=',m_ath,' atv=',m_atv);" /> -->
+	
+	<scene name="scene_B" title="B - Living Room" onstart="" thumburl="panos/B.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/B.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/B.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="165" atv="27.8" linkedscene="scene_G" 
+			scale="0.8"
+	       	onover.addevent="tween(scale,0.85);"
+	       	onout.addevent="tween(scale,0.8);"
+		/>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-84.5" atv="28.8" linkedscene="scene_H" 
+			scale="0.8"
+	       	onover.addevent="tween(scale,0.85);"
+	       	onout.addevent="tween(scale,0.8);"
+		/>
+
+
+	</scene>
+
+	<scene name="scene_G" title="G - Kitchen" onstart="" thumburl="panos/G.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/G.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/G.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="179" atv="42.3" linkedscene="scene_B" 
+			scale="0.8"
+	       	onover.addevent="tween(scale,0.85);"
+	       	onout.addevent="tween(scale,0.8);"
+		/>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="1" atv="41.5" linkedscene="scene_K" 
+			scale="0.8"
+	       	onover.addevent="tween(scale,0.85);"
+	       	onout.addevent="tween(scale,0.8);"
+		/>
+
+	</scene>
+
+	<scene name="scene_H" title="H - Bedroom" onstart="" thumburl="panos/H.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/H.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/H.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="106" atv="37" linkedscene="scene_B" 
+			scale="0.8"
+	       	onover.addevent="tween(scale,0.85);"
+	       	onout.addevent="tween(scale,0.8);"
+		/>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="126.2" atv="56.2" linkedscene="scene_J" 
+			scale="0.8"
+	       	onover.addevent="tween(scale,0.85);"
+	       	onout.addevent="tween(scale,0.8);"
+		/>
+
+	</scene>
+
+	<scene name="scene_J" title="J - Bathroom" onstart="" thumburl="panos/J.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/J.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/J.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="28.5" atv="31.2" linkedscene="scene_B" 
+			scale="0.8"
+	       	onover.addevent="tween(scale,0.85);"
+	       	onout.addevent="tween(scale,0.8);"
+		/>
+
+	</scene>
+
+	<scene name="scene_K" title="K - Living Room" onstart="" thumburl="panos/K.tiles/thumb.jpg" lat="" lng="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/K.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/K.tiles/pano_%s.jpg" />
+		</image>
+
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-19.6" atv="24.8" linkedscene="scene_G" 
+			scale="0.8"
+	       	onover.addevent="tween(scale,0.85);"
+	       	onout.addevent="tween(scale,0.8);"
+		/>
+
+	</scene>
+
+	<include url="plugins/garrows/garrows_settings.xml" />
+	<include url="plugins/garrows/garrows.xml" />
+	<include url="plugins/gtransition/gtransition_settings.xml" />
+	<include url="plugins/gtransition/gtransition.xml" />
+
+</krpano>
