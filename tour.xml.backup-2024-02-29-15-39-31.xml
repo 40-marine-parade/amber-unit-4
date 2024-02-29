@@ -90,7 +90,7 @@
 	       	onout.addevent="tween(scale,0.8);"
 		/>
 
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-84.5" atv="28.8" linkedscene="scene_H" 
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-52" atv="11" linkedscene="scene_K" 
 			scale="0.8"
 	       	onover.addevent="tween(scale,0.85);"
 	       	onout.addevent="tween(scale,0.8);"
@@ -111,13 +111,19 @@
 			<cube url="panos/G.tiles/pano_%s.jpg" />
 		</image>
 
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="179" atv="42.3" linkedscene="scene_B" 
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="118" atv="42.3" linkedscene="scene_B" 
 			scale="0.8"
 	       	onover.addevent="tween(scale,0.85);"
 	       	onout.addevent="tween(scale,0.8);"
 		/>
 
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="1" atv="41.5" linkedscene="scene_K" 
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-120" atv="41.5" linkedscene="scene_K" 
+			scale="0.8"
+	       	onover.addevent="tween(scale,0.85);"
+	       	onout.addevent="tween(scale,0.8);"
+		/>
+
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="29" atv="41.5" linkedscene="scene_J" 
 			scale="0.8"
 	       	onover.addevent="tween(scale,0.85);"
 	       	onout.addevent="tween(scale,0.8);"
@@ -143,12 +149,6 @@
 	       	onout.addevent="tween(scale,0.8);"
 		/>
 
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="126.2" atv="56.2" linkedscene="scene_J" 
-			scale="0.8"
-	       	onover.addevent="tween(scale,0.85);"
-	       	onout.addevent="tween(scale,0.8);"
-		/>
-
 	</scene>
 
 	<scene name="scene_J" title="J - Bathroom" onstart="" thumburl="panos/J.tiles/thumb.jpg" lat="" lng="" heading="">
@@ -163,7 +163,13 @@
 			<cube url="panos/J.tiles/pano_%s.jpg" />
 		</image>
 
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="28.5" atv="31.2" linkedscene="scene_B" 
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-88" atv="31.2" linkedscene="scene_B" 
+			scale="0.8"
+	       	onover.addevent="tween(scale,0.85);"
+	       	onout.addevent="tween(scale,0.8);"
+		/>
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="176" atv="176" linkedscene="scene_H" 
 			scale="0.8"
 	       	onover.addevent="tween(scale,0.85);"
 	       	onout.addevent="tween(scale,0.8);"
@@ -183,7 +189,7 @@
 			<cube url="panos/K.tiles/pano_%s.jpg" />
 		</image>
 
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-19.6" atv="24.8" linkedscene="scene_G" 
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-88" atv="24.8" linkedscene="scene_G" 
 			scale="0.8"
 	       	onover.addevent="tween(scale,0.85);"
 	       	onout.addevent="tween(scale,0.8);"

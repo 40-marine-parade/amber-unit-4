@@ -1,0 +1,53 @@
+
+<krpano>
+
+    <plan_settings  pin_cod="" 
+ 					start_open_plan="true" 
+ 					start_open_plan_mobila="false" 
+					point_url_1="default.png" 
+					point_url_2="actived.png" 
+					point_url_3="active.png" 
+					pointV_url_1="gl_r.png" 
+					pointV_url_2="gl.png" 
+					point_current="true" 
+					point_scale="NaN" 
+					radar_scale="1.5" 
+					compass_enabled="false" 
+					start_open_compass="false" 
+					compass_on_plan="false" 
+					title_spot="true" 
+					title_V="true" 
+					keep_viev="true" 
+					design_bgcolor_cb="16777215" 
+					click_spot_close_plan="false" 
+					click_V_close_plan="false" 
+					click_close_plan="false" 
+					onhover_button_open_plan="false" 
+					width_mobile="0.24" 
+					height_mobile="0.28" 
+					name_FIRSTXML="tour" 
+					list_plan="true" 
+					button_fullscreen="false" 
+					angle_placemark="true" 
+					open_plan_resetting_size="false" 
+ 				/>
+
+    <layer  name="plansm_2"  style="plan_layer"  name_plan="UNIT 4"  plan_ur="plan2.png"  start_scene="scene_b"  compas_flpl="0"  />
+
+     <layer  name="pointfr_6"  style="point_fpr"  erscena="scene_b"  x="826"  y="1176"  scale="2.5"  heading2="270"  nam_plan="plansm_2"  tit_scena="Living Room"  url="%FIRSTXML%/floorplan_SM/iconPoint/default.png"  icon_1="default.png"  icon_2="actived.png"  icon_3="active.png"  />
+    <layer  name="pointfr_7"  style="point_fpr"  erscena="scene_g"  x="633"  y="1028"  scale="2.5"  heading2="180"  nam_plan="plansm_2"  tit_scena="Kitchen"  url="%FIRSTXML%/floorplan_SM/iconPoint/default.png"  icon_1="default.png"  icon_2="actived.png"  icon_3="active.png"  />
+    <layer  name="pointfr_8"  style="point_fpr"  erscena="scene_h"  x="1055"  y="785"  scale="2.5"  heading2="225"  nam_plan="plansm_2"  tit_scena="Bedroom"  url="%FIRSTXML%/floorplan_SM/iconPoint/default.png"  icon_1="default.png"  icon_2="actived.png"  icon_3="active.png"  />
+    <layer  name="pointfr_9"  style="point_fpr"  erscena="scene_j"  x="843"  y="749"  scale="2.5"  heading2="90"  nam_plan="plansm_2"  tit_scena="Bathroom"  url="%FIRSTXML%/floorplan_SM/iconPoint/default.png"  icon_1="default.png"  icon_2="actived.png"  icon_3="active.png"  />
+    <layer  name="pointfr_10"  style="point_fpr"  erscena="scene_k"  x="427"  y="1163"  scale="2.5"  heading2="0"  nam_plan="plansm_2"  tit_scena="Living Room"  url="%FIRSTXML%/floorplan_SM/iconPoint/default.png"  icon_1="default.png"  icon_2="actived.png"  icon_3="active.png"  />
+
+	<!-- no viewpoints  --> 
+
+   <layer  name="top_container_plan"  type="container"  keep="true"  enabled="true"  alpha="0"  align="lefttop"  x="40"  y="105"  width="343"  height="0"  maskchildren="false"  zorder="50" 
+ 			ox="0"  oy="0"  bgcolor="0xFFFFFF"  bgalpha="0"  bgcapture="true"  bgborder="0,0,0,0 0xFFFFFF 0.00"  bgshadow="0 0 0 0 0xFFFFFF 0"  bgroundedge="0 0 0 0" 
+ 			onhover=""  onout=""  ondown="drag_plan();"  />
+
+   <layer  name="container_plan1"  type="container"  keep="true"  enabled="true"  alpha="0"  align="lefttop"  x="40"  y="105"  width="343"  height="424"  maskchildren="true"  zorder="null" 
+ 			ox="0"  oy="0"  bgcolor="NaN"  bgalpha="0"  bgcapture="true"  bgborder="0,0,0,0 0xE6FF00 0"  bgshadow="2 5 10 4 0x1D1D1D 0"  bgroundedge="0 0 0 0" 
+ 			onhover="set(maschtab,true); "  onout="set(maschtab,false);"  ondown="0"  />
+
+</krpano>
